@@ -1,107 +1,834 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>数字区块链交易系统服务</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 0 20px;
-            background-color: #f9f9f9;
-        }
-        h1, h2, h3 {
-            color: #333;
-            transition: font-size 0.3s ease;
-        }
-        img {
-            max-width: 100%;
-        }
-        #banner {
-            width: 100%;
-            height: auto;
-        }
-        #profile-pic {
-            border-radius: 50%;
-        }
-        .project-image {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-        }
-        .project-image:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .badge {
-            display: inline-block;
-            margin: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h1>欢迎来到我们的数字区块链交易系统服务</h1>
-    <img id="banner" src="https://via.placeholder.com/1200x300.png?text=领先的数字区块链交易解决方案" alt="Banner">
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bigtech - ICO & Crypto Landing Page Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <h2>关于我们</h2>
-    <p>作为数字区块链交易系统领域的专业服务提供商，我们致力于为您的数字货币交易平台提供高度创新和安全的解决方案。我们以技术实力、专业知识和丰富经验为基础，为您提供一流的数字资产交易系统，确保您在竞争激烈的数字资产市场中占据领先地位。</p>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <img id="profile-pic" src="https://via.placeholder.com/150.png?text=您的照片" alt="Profile Picture">
+        <!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body class="home-01">
 
-    <h2>技术实力与架构</h2>
-    <p>我们的团队由经验丰富的区块链开发者、金融科技专家和软件工程师组成，具备深厚的技术底蕴。我们采用分布式系统架构，利用先进的云计算技术，确保您的交易系统具备高度可扩展性和稳定性。</p>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <!-- Preloader -->
 
-    <h2>定制化解决方案</h2>
-    <p>每个数字货币交易平台都具有独特的业务需求和战略目标。我们通过与您密切合作，深入了解您的业务模型，提供高度定制化的解决方案，涵盖了用户管理、交易引擎、风险控制、合规性等多个关键领域。</p>
+        <!-- header-area -->
+        <header id="header">
+            <div id="header-fixed-height"></div>
+            <div id="sticky-header" class="menu-area">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                            <div class="menu-wrap">
+                                <nav class="menu-nav">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    </div>
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li class="active menu-item-has-children"><a href="#header" class="section-link">Home</a>
+                                                <ul class="sub-menu">
+                                                    <li class="active"><a href="index.html">Home One</a></li>
+                                                    <li><a href="index-2.html">Home Two</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#about" class="section-link">About us</a></li>
+                                            <li><a href="#sales" class="section-link">Sales</a></li>
+                                            <li><a href="#roadmap" class="section-link">Roadmap</a></li>
+                                            <li class="menu-item-has-children"><a href="blog.html">Blog</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog.html">Our Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#contact" class="section-link">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-action d-none d-md-block">
+                                        <ul>
+                                            <li class="header-lang"><span class="selected-lang">ENG</span>
+                                                <ul class="lang-list">
+                                                    <li><a href="#">IND</a></li>
+                                                    <li><a href="#">BNG</a></li>
+                                                    <li><a href="#">TUR</a></li>
+                                                    <li><a href="#">CIN</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header-btn"><a href="#" class="btn">Buy Now</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <nav class="menu-box">
+                                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                                    <div class="nav-logo"><a href="index.html"><img src="assets/img/logo/logo.png" alt="" title=""></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+                                    <div class="social-links">
+                                        <ul class="clearfix">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-area-end -->
 
-    <h2>高级交易引擎</h2>
-    <p>我们的交易引擎采用最新的撮合算法和高性能计算技术，支持多种订单类型、智能合约和高频交易策略。通过实时数据处理和低延迟的执行，确保系统在高负载环境下保持卓越性能。</p>
 
-    <h2>安全与合规</h2>
-    <p>数字资产的安全性是我们设计的核心原则。我们整合了最高级别的安全措施，包括硬件安全模块（HSM）、双重认证、智能合约审计等，以保障用户数字资产的安全性。我们严格遵循全球合规标准，确保您的平台在KYC、AML等方面符合监管要求。</p>
+        <!-- main-area -->
+        <main class="fix">
 
-    <h2>用户体验</h2>
-    <p>我们注重用户界面的设计和交互体验，通过实时数据更新、多语言支持和定制化的用户设置，为交易者提供流畅、直观的交易体验。数字钱包的设计考虑了便捷性和安全性的平衡，使用户能够方便管理数字资产。</p>
+            <!-- banner-area -->
+            <section class="banner-area banner-bg">
+                <div class="banner-shape-wrap">
+                    <img src="assets/img/banner/banner_shape01.png" alt="" class="img-one">
+                    <img src="assets/img/banner/banner_shape02.png" alt="" class="img-two">
+                    <img src="assets/img/banner/banner_shape03.png" alt="" class="img-three">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="banner-content text-center">
+                                <img src="assets/img/icon/fire.png" alt="">
+                                <h2 class="title">Join Future of Algorithmic <span>Crypto</span> Trading Strategies</h2>
+                            </div>
+                            <div class="banner-progress-wrap">
+                                <ul>
+                                    <li>Pre Sell</li>
+                                    <li>Soft Cap</li>
+                                    <li>Bonus</li>
+                                </ul>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4 class="title">65% target raised <span>1 ETH = $1000 = 3177.38 CIC</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <div class="banner-countdown-wrap text-center">
+                                <h2 class="title">ICO Will Start In..</h2>
+                                <div class="coming-time" data-countdown="2023/1/29"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner-area-end -->
 
-    <h2>持续支持与服务</h2>
-    <p>我们提供全方位的支持服务，包括系统部署、定期维护、安全审计和技术培训。我们的目标是建立长期的合作伙伴关系，确保您的数字货币交易系统始终处于最优状态。</p>
+            <!-- about-area -->
+            <section id="about" class="about-area pt-130 pb-130">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-img wow fadeInLeft" data-wow-delay=".2s">
+                                <img src="assets/img/images/about_img01.png" alt="">
+                                <img src="assets/img/images/about_img02.png" alt="" class="img-two">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content wow fadeInRight" data-wow-delay=".2s">
+                                <div class="section-title mb-30">
+                                    <span class="sub-title">Who we are</span>
+                                    <h2 class="title">The World’s <span>1st ICO</span> Platform That Offers Rewards</h2>
+                                </div>
+                                <p>The World’s 1st ICO Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell
+                                    their tokens</p>
+                                <a href="#" class="btn">Purchase Tokens</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about-area-end -->
 
-    <div class="badges">
-        <span class="badge"><i class="fab fa-bitcoin"></i> 区块链技术</span>
-        <span class="badge"><i class="fas fa-shield-alt"></i> 安全第一</span>
-        <span class="badge"><i class="fas fa-cogs"></i> 定制解决方案</span>
-    </div>
+            <!-- partner-area -->
+            <div class="partner-area pb-130">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center mb-10">
+                                <span class="sub-title">Our top partner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="partner-wrap">
+                                <ul>
+                                    <li><img src="assets/img/partner/partner_img01.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img02.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img03.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img04.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img05.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img06.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img07.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img08.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img09.png" alt=""></li>
+                                    <li><img src="assets/img/partner/partner_img10.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- partner-area-end -->
 
-    <h2>有趣的事实</h2>
-    <ul>
-        <li>🌱 目前正在学习高级React模式。</li>
-        <li>👯 寻求与开源项目的合作。</li>
-        <li>🥅 2024年目标：更多参与开源项目，每月撰写一篇技术博客。</li>
-        <li>⚡ 有趣的事实：我喜欢在空闲时间下棋和解谜。</li>
-    </ul>
+            <!-- choose-area -->
+            <section class="choose-area pb-130">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <div class="section-title text-center mb-50">
+                                <span class="sub-title">why Choose us</span>
+                                <h2 class="title">Why choose our bigtech <span>Token</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row choose-active">
+                        <div class="col-lg-3">
+                            <div class="choose-item">
+                                <div class="choose-icon">
+                                    <img src="assets/img/icon/choose_icon01.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#">Mobile payment make easy</a></h2>
+                                    <p>Add new, trending and rare artwork to your collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="choose-item">
+                                <div class="choose-icon">
+                                    <img src="assets/img/icon/choose_icon02.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#">Lifetime free transaction</a></h2>
+                                    <p>Add new, trending and rare artwork to your collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="choose-item">
+                                <div class="choose-icon">
+                                    <img src="assets/img/icon/choose_icon03.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#">Protect the <br> identity</a></h2>
+                                    <p>Add new, trending and rare artwork to your collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="choose-item">
+                                <div class="choose-icon">
+                                    <img src="assets/img/icon/choose_icon04.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#">Sercurity & control over money</a></h2>
+                                    <p>Add new, trending and rare artwork to your collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="choose-item">
+                                <div class="choose-icon">
+                                    <img src="assets/img/icon/choose_icon02.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#">Lifetime free transaction</a></h2>
+                                    <p>Add new, trending and rare artwork to your collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="choose-item">
+                                <div class="choose-icon">
+                                    <img src="assets/img/icon/choose_icon03.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#">Protect the <br> identity</a></h2>
+                                    <p>Add new, trending and rare artwork to your collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="choose-item">
+                                <div class="choose-icon">
+                                    <img src="assets/img/icon/choose_icon04.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#">Sercurity & control over money</a></h2>
+                                    <p>Add new, trending and rare artwork to your collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                        <span class="slider__label sr-only"></span>
+                    </div>
+                </div>
+            </section>
+            <!-- choose-area-end -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // 标题动画效果
-            $('h1, h2, h3').hover(function() {
-                $(this).animate({ fontSize: '+=10px' }, 300);
-            }, function() {
-                $(this).animate({ fontSize: '-=10px' }, 300);
-            });
+            <!-- chart-area -->
+            <section id="sales" class="chart-area chart-bg jarallax">
+                <div class="container">
+                    <div class="chart-inner">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-6 col-md-10 order-0 order-lg-2">
+                                <div class="chart-wrap wow fadeInRight" data-wow-delay=".2s">
+                                    <img src="assets/img/images/chart.png" alt="">
+                                    <ul>
+                                        <li>Contingency: 70%</li>
+                                        <li>Business Development: 10%</li>
+                                        <li>Investor: 30%</li>
+                                        <li>Poland</li>
+                                        <li>Legal & Regulation:10%</li>
+                                        <li>Czech Republic</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-10">
+                                <div class="chart-content wow fadeInLeft" data-wow-delay=".2s">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="funding-tab" data-bs-toggle="tab" data-bs-target="#funding" type="button"
+                                                role="tab" aria-controls="funding" aria-selected="true">Funding Allocation</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="token-tab" data-bs-toggle="tab" data-bs-target="#token" type="button"
+                                                role="tab" aria-controls="token" aria-selected="false">Token Allocation</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="funding" role="tabpanel" aria-labelledby="funding-tab">
+                                            <div class="chart-content-inner">
+                                                <h2 class="title">1 CNL = 0.0863 BTC</h2>
+                                                <p>The World’s 1st ICO Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell their tokens</p>
+                                                <a href="#" class="btn">Buy Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="token" role="tabpanel" aria-labelledby="token-tab">
+                                            <div class="chart-content-inner">
+                                                <h2 class="title">2 CNL = 0.0967 BTC</h2>
+                                                <p>The World’s 1st ICO Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell their tokens</p>
+                                                <a href="#" class="btn">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- chart-area-end -->
 
-            // 平滑滚动到部分
-            $('a[href^="#"]').on('click', function(event) {
-                var target = $(this.getAttribute('href'));
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                }
-            });
-        });
-    </script>
-</body>
+            <!-- area-bg -->
+            <div class="area-bg">
+
+                <!-- roadMap-area -->
+                <section id="roadmap" class="roadmap-area pt-130 pb-130">
+                    <div class="container custom-container-two">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-5 col-lg-8">
+                                <div class="section-title text-center mb-60">
+                                    <span class="sub-title">OUr Roadmap</span>
+                                    <h2 class="title">Bigtech Strategy and <br> Project <span>Plan</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="bt-roadmap_x">
+                                    <div class="bt-roadmap-wrap">
+                                        <div class="bt-roadmap-item">
+                                            <span class="roadmap-title">Mid of Q4 2021</span>
+                                            <div class="roadmap-content">
+                                                <span class="dot"></span>
+                                                <h4 class="title">Concept</h4>
+                                                <span>EVM support for parthians</span>
+                                                <span>SubQuery Academy</span>
+                                                <span>Proof of indexing</span>
+                                            </div>
+                                        </div>
+                                        <div class="bt-roadmap-item">
+                                            <span class="roadmap-title">Mid of Q4 2021</span>
+                                            <div class="roadmap-content">
+                                                <span class="dot"></span>
+                                                <h4 class="title">Research</h4>
+                                                <span>SubQuery Builders/Grants Program</span>
+                                                <span>SQT Network contract internal MVP</span>
+                                                <span>Coordinator and client SDK</span>
+                                            </div>
+                                        </div>
+                                        <div class="bt-roadmap-item">
+                                            <span class="roadmap-title">Mid of Q4 2021</span>
+                                            <div class="roadmap-content">
+                                                <span class="dot"></span>
+                                                <h4 class="title">App beta test</h4>
+                                                <span>Public testnet launch</span>
+                                                <span>SubQuery Network Explorer and dApp</span>
+                                                <span>Point-in-time indexing</span>
+                                            </div>
+                                        </div>
+                                        <div class="bt-roadmap-item">
+                                            <span class="roadmap-title">Mid of Q4 2021</span>
+                                            <div class="roadmap-content">
+                                                <span class="dot"></span>
+                                                <h4 class="title">Token Test</h4>
+                                                <span>SQT token generation event</span>
+                                                <span>Public incentivize testnet launch</span>
+                                                <span>Data traffic insights and reporting</span>
+                                            </div>
+                                        </div>
+                                        <div class="bt-roadmap-item">
+                                            <span class="roadmap-title">Mid of Q4 2021</span>
+                                            <div class="roadmap-content">
+                                                <span class="dot"></span>
+                                                <h4 class="title">Alpha test</h4>
+                                                <span>Launch of the SubQuery Foundation</span>
+                                                <span>Finalise research for other Layer-1 chains</span>
+                                                <span>Liquidity mining program</span>
+                                            </div>
+                                        </div>
+                                        <div class="bt-roadmap-item">
+                                            <span class="roadmap-title">Mid of Q4 2021</span>
+                                            <div class="roadmap-content">
+                                                <span class="dot"></span>
+                                                <h4 class="title">Benefits</h4>
+                                                <span>Mainnet launch</span>
+                                                <span>Centralized exchange launch</span>
+                                                <span>Public incentivize testnet</span>
+                                            </div>
+                                        </div>
+                                        <div class="bt-roadmap-item">
+                                            <span class="roadmap-title">Mid of Q4 2021</span>
+                                            <div class="roadmap-content">
+                                                <span class="dot"></span>
+                                                <h4 class="title">Operational</h4>
+                                                <span>SubQuery launches its <br> own parthian</span>
+                                                <span>SubQuery Foundation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- roadMap-area-end -->
+
+
+                <!-- document-area -->
+                <section class="document-area pt-60">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7 order-2 order-lg-0">
+                                <div class="document-img text-center wow fadeInUp" data-wow-delay=".2s">
+                                    <img src="assets/img/images/document_img.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-7">
+                                <div class="document-content mt-50 wow fadeInRight" data-wow-delay=".2s">
+                                    <div class="section-title mb-35">
+                                        <span class="sub-title">Whitepaper</span>
+                                        <h2 class="title">Read Bigtech <span>Documents</span></h2>
+                                    </div>
+                                    <ul class="document-list">
+                                        <li>White Paper</li>
+                                        <li>Privaci & Policy</li>
+                                        <li>Terms Of Coin Sale</li>
+                                        <li>One Pager</li>
+                                    </ul>
+                                    <a href="#" class="btn">Download Doc</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- document-area-end -->
+
+
+            </div>
+            <!-- area-bg-end -->
+
+            <!-- team-area -->
+            <section class="team-area pt-130">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <div class="section-title text-center mb-70">
+                                <span class="sub-title">OUr team</span>
+                                <h2 class="title">The Leadership <br> <span>Team</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img01.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Cameron Williamson</h2>
+                                    <span>Founder & CO</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img02.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Eleanor Pena</h2>
+                                    <span>Head of Design</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img03.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Bessie Cooper</h2>
+                                    <span>Vp People</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img04.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Darlene Robertson</h2>
+                                    <span>Product Manager</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img05.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Jacob Jones</h2>
+                                    <span>Marketer</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img06.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Courtney Henry</h2>
+                                    <span>Founder</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img07.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Ronald Richards</h2>
+                                    <span>Account Manager</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="assets/img/team/team_img08.png" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h2 class="title">Theresa Webb</h2>
+                                    <span>Founder & CO</span>
+                                    <ul class="team-social">
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- team-area-end -->
+
+            <!-- contact-area -->
+            <section id="contact" class="contact-area pt-70 pb-110">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center mb-70">
+                                <span class="sub-title">Contact</span>
+                                <h2 class="title"><span>Contact</span> ICO Crypto</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="contact-info-item">
+                                    <div class="icon">
+                                        <span class="icon-background"></span>
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p>company@gmail.com <br> infoweb@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="contact-info-item">
+                                    <div class="icon">
+                                        <span class="icon-background"></span>
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p>+84 0977425031<br> +998 765 775 34</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="contact-info-item">
+                                    <div class="icon">
+                                        <span class="icon-background"></span>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p>State/province/area: <br>Georgia 198</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrap">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="text" placeholder="Enter your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="email" placeholder="Enter you email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-grp">
+                                <textarea name="massage" placeholder="Enter your massage"></textarea>
+                            </div>
+                            <div class="submit-btn text-center">
+                                <button type="submit" class="btn">Send Massage</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- contact-area-end -->
+
+        </main>
+        <!-- main-area-end -->
+
+
+        <!-- footer-area -->
+        <footer>
+            <div class="footer-area">
+                <div class="container">
+                    <div class="footer-scroll-wrap">
+                        <button class="scroll-to-target" data-target="html"><i class="fas fa-arrow-up"></i></button>
+                    </div>
+                    <div class="footer-top">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+                                    <a href="index.html" class="f-logo"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <div class="footer-content">
+                                        <p>A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla</p>
+                                        <ul class="footer-social">
+                                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-5 col-sm-6">
+                                <div class="footer-widget  wow fadeInUp" data-wow-delay=".4s">
+                                    <h4 class="fw-title">Useful Links</h4>
+                                    <div class="footer-link">
+                                        <ul>
+                                            <li><a href="#">Contact us</a></li>
+                                            <li><a href="#">How it Works</a></li>
+                                            <li><a href="#">Create</a></li>
+                                            <li><a href="#">Explore</a></li>
+                                            <li><a href="#">Terms & Services</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-sm-6">
+                                <div class="footer-widget wow fadeInUp" data-wow-delay=".6s">
+                                    <h4 class="fw-title">Community</h4>
+                                    <div class="footer-link">
+                                        <ul>
+                                            <li><a href="#">Help Center</a></li>
+                                            <li><a href="#">Partners</a></li>
+                                            <li><a href="#">Suggestions</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Newsletters</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="footer-widget wow fadeInUp" data-wow-delay=".8s">
+                                    <h4 class="fw-title">Subscribe Newsletter</h4>
+                                    <div class="footer-newsletter">
+                                        <p>Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
+                                        <form action="#">
+                                            <input type="email" placeholder="Info@gmail.com" required>
+                                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2022. All Rights by <a href="http://www.bootstrapMB.com">bootstrapMB</a> Bigtech</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-none d-sm-block">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Terms and conditions</a></li>
+                                        <li><a href="#">Privacy policy</a></li>
+                                        <li><a href="#">Login / Signup</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+
+
+
+        <!-- JS here -->
+        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.odometer.min.js"></script>
+        <script src="assets/js/jquery.countdown.min.js"></script>
+        <script src="assets/js/jquery.knob.min.js"></script>
+        <script src="assets/js/jquery-countdowngampang.min.js"></script>
+        <script src="assets/js/jquery.ba-throttle-debounce.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.min.js"></script>
+        <script src="assets/js/jarallax.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.easing.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
