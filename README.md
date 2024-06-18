@@ -32,9 +32,14 @@
 
 我们提供多种产品和服务，帮助您的平台在竞争中脱颖而出。
 ---
-| <img src="https://github.com/jkjj8899/jkjj8899/blob/main/123.png" width="450" height="300"> | <img src="https://github.com/jkjj8899/jkjj8899/blob/main/photo_2024-05-08_02-51-31.jpg" width="450" height="300"> | <img src="https://via.placeholder.com/150x150" width="150" height="150"> | <img src="https://via.placeholder.com/150x150" width="150" height="150"> |
-| --- | --- | --- | --- |
-| **高级交易引擎** | **安全数字钱包** | **合规解决方案** | **用户管理系统** |
+| **高级交易引擎** |
+ ![image](https://github.com/jkjj8899/jkjj8899/assets/152266072/d88c3adb-ace0-487a-bb8a-6dfcd78b352a)
+
+[![详细功能及演示](https://img.shields.io/badge/详细功能及演示-点击查看-blue)](https://t.me/seven56678)
+
+| **综合盘交易** |
+![image](https://github.com/jkjj8899/jkjj8899/assets/152266072/d01c5bc8-b452-4a92-88e2-b0972e4ee1b9)
+
 ## 🛠️ 技能图标
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=333)
