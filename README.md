@@ -35,7 +35,7 @@
 | **高级交易引擎** |
  ![image](https://github.com/jkjj8899/jkjj8899/assets/152266072/d88c3adb-ace0-487a-bb8a-6dfcd78b352a)
 
-[![详细功能及演示](https://img.shields.io/badge/详细功能及演示-点击查看-blue)](https://t.me/seven56678)
+[![详细功能及演示](https://img.shields.io/badge/详细功能及演示-点击查看-blue)](https://t.me/sy89899)
 
 | **综合盘交易** |
 ![image](https://github.com/jkjj8899/jkjj8899/assets/152266072/d01c5bc8-b452-4a92-88e2-b0972e4ee1b9)
@@ -114,4 +114,4 @@
 ## 📞 联系我们
 
 📍 QQ: 2147059858
-📱 Telegram: [加入我们的群组](https://t.me/seven56678)
+📱 Telegram: [加入我们的群组](https://t.me/sy89899)
